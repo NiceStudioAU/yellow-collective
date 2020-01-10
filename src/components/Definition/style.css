@@ -1,0 +1,16 @@
+.def-main {
+  font-family: "Alfa Slab One", cursive;
+  /* font-family: "Gravitas One", cursive; */
+  font-size: 60px;
+  letter-spacing: 0.2rem;
+  /* color: #fdba2a; */
+}
+
+.spelling {
+  font-family: "Open Sans", sans-serif;
+}
+
+.def-bg {
+  background-color: #000000;
+  color: #fcfcea;
+}
