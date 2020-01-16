@@ -1,16 +1,39 @@
-.def-main {
-  font-family: "Alfa Slab One", cursive;
-  /* font-family: "Gravitas One", cursive; */
-  font-size: 60px;
+.def-container {
+  /* background-color: #fdba2a; */
+  color: #fff;
+  height: 100vh;
+  padding: 3rem 3.75rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.def-title {
+  font-size: 3.75rem;
   letter-spacing: 0.2rem;
-  /* color: #fdba2a; */
+  line-height: 4rem;
 }
 
-.spelling {
-  font-family: "Open Sans", sans-serif;
+.def-spelling {
+  text-align: right;
+  font-size: 2rem;
+  position: absolute;
+  top: 3rem;
+  right: 3.75rem;
 }
 
-.def-bg {
-  background-color: #000000;
-  color: #fcfcea;
+.def-subheading {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.def-body {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.text-wrapper {
 }
