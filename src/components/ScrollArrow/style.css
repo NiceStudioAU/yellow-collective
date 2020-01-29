@@ -18,3 +18,7 @@
   width: 24px;
   height: auto;
 }
+
+.fade-in {
+  opacity: 0;
+}

@@ -38,13 +38,12 @@ const Homepage = () => {
       makeDraggable()
    }, [])
 
-
    return (
       <>
          <Header />
          <div className='home-section'>
             <LogoLetters />
-            {/* <ScrollArrow scrollToSection={() => scrollToSection('one')} color='#000' /> */}
+            <ScrollArrow scrollToSection={() => scrollToSection('one')} color='#DC438B' fadeIn={true} />
          </div>
          <div className='home-section' ref={sectionRefs['one']} style={{ backgroundColor: '#fdba2a' }}>
             <Definition />
