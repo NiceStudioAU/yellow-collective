@@ -91,12 +91,13 @@
   }
   .form-text {
     width: 100%;
-    padding: 60px;
+    padding: 80px 24px 60px;
     box-sizing: border-box;
   }
   .form {
     width: 100%;
     box-sizing: border-box;
+    padding: 0 24px 48px;
   }
   .form-text-wrapper {
     width: 100%;
