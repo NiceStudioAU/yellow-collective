@@ -1,8 +1,10 @@
 import './style.css'
 
+import Blurb from '../../components/Blurb'
 import Definition from '../../components/Definition'
 import Draggable from "gsap/Draggable"
-import Header from '../../components/Header'
+import Form from '../../components/Form'
+import Header from '../../components/Form'
 import LogoLetters from '../../components/LogoLetters'
 import React from 'react'
 import ScrollArrow from '../../components/ScrollArrow'
@@ -40,33 +42,24 @@ const Homepage = () => {
 
    return (
       <>
-         <Header />
+         {/* Animation */}
          <div className='home-section'>
             <LogoLetters />
-            <ScrollArrow scrollToSection={() => scrollToSection('one')} color='#DC438B' fadeIn={true} />
+            <ScrollArrow scrollToSection={() => scrollToSection('one')} color='#fff' fadeIn={true} />
          </div>
+
+         {/* Definition */}
          <div className='home-section' ref={sectionRefs['one']} style={{ backgroundColor: '#fdba2a' }}>
             <Definition />
-            <ScrollArrow scrollToSection={() => scrollToSection('two')} color='#fff' />
+            {/* <ScrollArrow scrollToSection={() => scrollToSection('two')} color='#DC438B' /> */}
          </div>
-         <div className='home-section' ref={sectionRefs['two']} style={{ backgroundColor: '#4e873b' }}>
-            <Definition />
-            <ScrollArrow scrollToSection={() => scrollToSection('three')} color='#fff' />
+
+         {/* Yellow Collective are.... 6 Boxes */}
+         <div className='home-section' ref={sectionRefs['two']} style={{ backgroundColor: '#fcfcea' }}>
+            <Blurb />
          </div>
-         <div className='home-section' ref={sectionRefs['three']} style={{ backgroundColor: '#3DB6E9' }}>
-            <Definition />
-            <ScrollArrow scrollToSection={() => scrollToSection('four')} color='#fff' />
-         </div>
-         <div className='home-section' ref={sectionRefs['four']} style={{ backgroundColor: '#fcfcea' }}>
-            <Definition />
-            <ScrollArrow scrollToSection={() => scrollToSection('five')} color='#000' />
-         </div>
-         <div className='home-section' ref={sectionRefs['five']} style={{ backgroundColor: '#DC438B' }}>
-            <Definition />
-            <ScrollArrow scrollToSection={() => scrollToSection('six')} color='#fff' />
-         </div>
-         <div className='home-section' ref={sectionRefs['six']} style={{ backgroundColor: '#d32c1c' }}>
-            <Definition />
+         <div className='home-section' ref={sectionRefs['three']} style={{ backgroundColor: '#fff' }}>
+            <Form />
          </div>
       </>
    )
@@ -74,7 +67,9 @@ const Homepage = () => {
 
 export default Homepage
 
-// #4e873b green
-// #d32c1c red
-
-// DC438B pink
+      // 4e873b green
+      // d32c1c red
+      // fdba2a yellow
+      // DC438B pink
+      // fcfcea cream
+// 3db6e9 blue

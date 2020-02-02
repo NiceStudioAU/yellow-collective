@@ -1,12 +1,11 @@
 .def-container {
-  /* background-color: #fdba2a; */
   color: #fff;
-  height: 100vh;
-  padding: 3rem 3.75rem;
+  height: 90vh;
+  /* padding: 3rem 3.75rem; */
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -17,11 +16,11 @@
 }
 
 .def-spelling {
-  text-align: right;
+  /* text-align: left; */
   font-size: 2rem;
-  position: absolute;
-  top: 3rem;
-  right: 3.75rem;
+  /* position: absolute; */
+  /* top: 3rem; */
+  /* right: 3.75rem; */
 }
 
 .def-subheading {
@@ -35,5 +34,34 @@
   line-height: 3rem;
 }
 
+.def-circle {
+  height: 60%;
+  /* mix-blend-mode: multiply; */
+  position: absolute;
+  top: 10vh;
+  fill: #fcfcea;
+  right: -10vw;
+}
+
+.def-shape2 {
+  fill: #dc438b;
+  height: 60%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: 0;
+  right: -5vw;
+}
+
+.def-right {
+  position: relative;
+  height: 100%;
+}
+
 .text-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0rem 3rem 3.75rem;
 }
