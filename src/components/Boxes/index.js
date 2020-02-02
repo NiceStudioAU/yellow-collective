@@ -63,7 +63,7 @@ const Boxes = () => {
                </div>
                <div className='boxes-box-text-wrapper'>
                   <h3 className='boxes-category'>Fund Raising</h3>
-                  <p className='boxes-category-text'>Start-up strategies, marketing due diligence and company Profile presentations.</p>
+                  <p className='boxes-category-text'>Start-up strategies, marketing due diligence and company profile presentations.</p>
                </div>
             </div>
          </div>
