@@ -59,6 +59,7 @@ const Homepage = () => {
          <div className='home-section' ref={sectionRefs['two']} style={{ backgroundColor: '#fcfcea' }}>
             {/* <Blurb /> */}
             <Boxes />
+            <ScrollArrow scrollToSection={() => scrollToSection('three')} color='#fff' />
          </div>
          <div className='home-section' ref={sectionRefs['three']} style={{ backgroundColor: '#fff' }}>
             <Form />
