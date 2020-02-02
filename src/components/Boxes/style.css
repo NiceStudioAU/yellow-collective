@@ -1,19 +1,22 @@
-.blurb-container {
+.boxes-container {
   color: #3db6e9;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 48px;
   position: relative;
+  min-height: 90vh;
 }
 
-.blurb-text {
-  font-size: 16px;
+.boxes-text {
+  font-size: 18px;
+  line-height: 38px;
   color: #424242;
 }
 
-.blurb-text-wrapper {
+.boxes-text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,18 +24,33 @@
   width: 60%;
   padding: 60px 0;
   text-align: center;
+  color: #424242;
 }
 
-.blurb-heading {
-  font-size: 24px;
+.boxes-heading {
+  font-size: 32px;
   font-weight: 600;
   color: #424242;
   margin-bottom: 0;
 }
-.blurb-left {
+
+.boxes-icon {
+  width: 200px;
+  height: 200px;
+  /* margin-bottom: 32px; */
+  display: flex;
+  justify-content: center;
 }
 
-.blurb-boxes {
+.boxes-svg {
+  height: 100%;
+}
+
+.boxes-box-text-wrapper {
+  max-width: 350px;
+}
+
+.boxes-boxes {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
@@ -43,70 +61,55 @@
   z-index: 1;
 }
 
-.blurb-box {
+.boxes-box {
   width: 20%;
   min-height: 300px;
   /* flex-grow: 1; */
   /* padding: 24px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
+
+  /* justify-content: center; */
+  align-items: center;
   position: relative;
   margin: 0 12px;
   /* text-align: center; */
   /* border-radius: 6px 6px 24px 24px; */
   /* background-color: #fff; */
 }
-/* 
-.blurb-box::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  box-shadow: ;
-} */
 
-.shadow {
-  position: absolute;
-  height: 90%;
-  width: 95%;
-  background-color: black;
-  top: 10%;
-  /* border-radius: 24px; */
-  left: 2.5%;
-  box-shadow: 0px 3px 10px #c7b57f;
-  z-index: -10;
-}
-.blurb-category {
+.boxes-category {
   font-size: 24px;
   /* position: absolute;
   top: 60px;
   left: 24px;
   margin: 0; */
   text-align: center;
+  color: #424242;
 }
 
-.blurb-category-text {
+.boxes-category-text {
   font-size: 16px;
   list-style: none;
   padding-inline-start: 0;
   line-height: 32px;
   /* color: #424242; */
   /* padding: 0 16px; */
-  color: #fff;
+  /* color: #fff; */
   margin: 8px;
   text-align: center;
+  color: #424242;
 }
 
 @media screen and (max-width: 1100px) {
-  /* .blurb-category {
+  /* .boxes-category {
     font-size: 48px;
   } */
-  .blurb-box {
+  .boxes-box {
     width: 80%;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
   }
-  .blurb-boxes {
+  .boxes-boxes {
     flex-direction: column;
     align-items: center;
   }

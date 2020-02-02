@@ -1,6 +1,7 @@
 import './style.css'
 
 import Blurb from '../../components/Blurb'
+import Boxes from '../../components/Boxes'
 import Definition from '../../components/Definition'
 import Draggable from "gsap/Draggable"
 import Form from '../../components/Form'
@@ -51,12 +52,13 @@ const Homepage = () => {
          {/* Definition */}
          <div className='home-section' ref={sectionRefs['one']} style={{ backgroundColor: '#fdba2a' }}>
             <Definition />
-            {/* <ScrollArrow scrollToSection={() => scrollToSection('two')} color='#DC438B' /> */}
+            <ScrollArrow scrollToSection={() => scrollToSection('two')} color='#fdba2a' />
          </div>
 
          {/* Yellow Collective are.... 6 Boxes */}
          <div className='home-section' ref={sectionRefs['two']} style={{ backgroundColor: '#fcfcea' }}>
-            <Blurb />
+            {/* <Blurb /> */}
+            <Boxes />
          </div>
          <div className='home-section' ref={sectionRefs['three']} style={{ backgroundColor: '#fff' }}>
             <Form />
@@ -67,9 +69,9 @@ const Homepage = () => {
 
 export default Homepage
 
-      // 4e873b green
-      // d32c1c red
-      // fdba2a yellow
-      // DC438B pink
-      // fcfcea cream
+            // 4e873b green
+            // d32c1c red
+            // fdba2a yellow
+            // DC438B pink
+            // fcfcea cream
 // 3db6e9 blue
