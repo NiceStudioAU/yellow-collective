@@ -112,7 +112,7 @@ const Form = () => {
                <p>Contact us about your requirements and we will put you in contact with the team member that is best suited to answer your needs. We’ll have a chat for the cost of a coffee.</p>
             </div>
          </div>
-         <form onSubmit={submitForm} className='form'>
+         <form onSubmit={submitForm} className='form' method="POST" data-netlify="true">
             <input type="hidden" name='contact-form' value='contact' />
             <TextField
                id='name'
