@@ -81,6 +81,10 @@
   color: #3db6e9 !important;
 }
 
+.success-message {
+  color: #fff;
+}
+
 @media screen and (max-width: 1100px) {
   .form-wrapper {
     flex-direction: column;

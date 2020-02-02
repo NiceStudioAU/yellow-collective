@@ -17,6 +17,7 @@ const Form = () => {
    const [subject, setSubject] = React.useState('')
    const [message, setMessage] = React.useState('')
    const [errors, setError] = React.useState(errorInitial)
+   const [success, setSuccess] = React.useState(false)
 
    const encode = (data) => {
       return Object.keys(data)
@@ -40,7 +41,13 @@ const Form = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...results })
          })
-            .then(() => alert("Success!"))
+            .then(() => {
+               setSuccess(true)
+               setName('')
+               setSubject('')
+               setEmail('')
+               setMessage('')
+            })
             .catch(error => alert(error))
 
       }
@@ -164,7 +171,11 @@ const Form = () => {
                fullWidth={true}
                className='form-input'
             />
-            <Button
+            {!!success ? (
+               <div className='success-message'>
+                  <h3>Thanks!</h3>
+               </div>
+            ) : (<Button
                size='large'
                variant='contained'
                onClick={submitForm}
@@ -172,9 +183,8 @@ const Form = () => {
                className='form-button'
             >
                Send
-            </Button>
+            </Button>)}
          </form>
-
       </div>
    )
 }
