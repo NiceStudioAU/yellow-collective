@@ -97,4 +97,8 @@
   .boxes-text-wrapper {
     width: 80%;
   }
+  .boxes-heading {
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
